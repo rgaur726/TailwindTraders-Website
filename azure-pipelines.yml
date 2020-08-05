@@ -13,7 +13,7 @@ steps:
     location: $(location)
     csmFile: Deploy/deployment.json
 
-- task: keesschollaart.arm-outputs.arm-outputs.ARM Outputs@4
+- task: keesschollaart.arm-outputs.arm-outputs.ARM Outputs@6.0
   displayName: ARM Outputs
   inputs:
     ConnectedServiceNameARM: $(azureSubscription)
