@@ -11,6 +11,7 @@ class UploadFile extends Component {
         super(props);
         this.uploadFile = this.uploadFile.bind(this);
     }
+    
 
     uploadFile(e) {
 
@@ -22,8 +23,8 @@ class UploadFile extends Component {
             .then((relatedProducts) => {
                 if (relatedProducts.length > 1) {
                     this.props.history.push({
-                        pathname: "/suggested-products-list",
-                        state: { relatedProducts },
+                        pathname: "/suggested-products-list" ,
+                        state: { relatedProducts },   
                     });
                 }else {
                     this.props.history.push({
